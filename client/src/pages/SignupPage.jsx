@@ -34,7 +34,7 @@ function SignupPage() {
         navigate("/login");
       })
       .catch((error) => {
-        const errorDescription = error.response.data.message;
+        const errorDescription = error.response;
         setErrorMessage(errorDescription);
       })
   };
